@@ -13,4 +13,8 @@ public extension Date {
     func adding(months: Int, using calendar: Calendar = .autoupdatingCurrent) -> Date {
         calendar.date(byAdding: .month, value: months, to: self)!
     }
+    
+    func adding(years: Int, using calendar: Calendar = .autoupdatingCurrent) -> Date {
+        calendar.date(byAdding: .year, value: years, to: self)!
+    }
 }
