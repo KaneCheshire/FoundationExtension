@@ -19,7 +19,10 @@ public extension Date {
     }
     
     func nextWeekend(using calendar: Calendar = .autoupdatingCurrent) -> Date {
-        let a = calendar.nextWeekend(startingAfter: self)!
-        return a.start
+        calendar.nextWeekend(startingAfter: self)!.start
+    }
+    
+    func previousWeekend(using calendar: Calendar = .autoupdatingCurrent) -> Date {
+        calendar.nextWeekend(startingAfter: self)!.start
     }
 }
