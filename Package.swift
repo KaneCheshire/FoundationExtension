@@ -12,7 +12,7 @@ let testTarget: Target = .testTarget(name: name + "Tests", dependencies: [.targe
 
 let package = Package(
     name: name,
-	platforms: [.iOS(.v10)],
+    platforms: [.iOS(.v10), .watchOS(.v3)],
     products: [product],
     targets: [target, testTarget]
 )
